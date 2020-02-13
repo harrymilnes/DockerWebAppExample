@@ -1,0 +1,10 @@
+version: '3'
+services:
+  webexample:
+    build: 
+      context: .
+    container_name: webexample
+    ports:
+      - "80:80"
+      - "433:433"
+    restart: unless-stopped
